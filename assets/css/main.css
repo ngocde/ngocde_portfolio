@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    padding: 0.4rem;
+    margin: 0 1rem;
+    background-color: #001A26;
+    color: #C7CDCF;
+}
+
+#header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #02A9F7;
+}
+
+#header .navbar div {
+    padding: 0.4rem;
+    margin: 0 1rem;
+}
+
+#header .navbar :last-child {
+    margin-right: 0;
+}
