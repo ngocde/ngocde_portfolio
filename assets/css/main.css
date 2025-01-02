@@ -4,8 +4,29 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #02A9F7;
+    --background-color: #00111A;
+    --text-color: #C7CDCF;
+}
+
 html {
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+}
+
+.button {
+    background-color: #FF9900;
+    color: var(--background-color);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
 }
 
 #header {
@@ -13,17 +34,31 @@ html {
     align-items: center;
     justify-content: space-between;
     font-size: 1.6rem;
-    padding: 0.4rem;
-    margin: 0 1rem;
+    padding: 2rem 3rem;
     background-color: #001A26;
-    color: #C7CDCF;
+    color: var(--text-color);
 }
 
 #header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #02A9F7;
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header_logo {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#header .navbar div:hover {
+    color: var(--primary-color);
+}
+
+.active{
+    color: var(--primary-color);
 }
 
 #header .navbar div {
@@ -33,4 +68,17 @@ html {
 
 #header .navbar :last-child {
     margin-right: 0;
+}
+
+/* wrap */
+#wrap {
+    background-color: var(--background-color);
+}
+
+/* footer */
+#footer {
+    background-color: #002333;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    padding: 2rem 3rem;
 }
