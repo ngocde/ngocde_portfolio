@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -30,6 +31,9 @@ body {
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,6 +41,7 @@ body {
     padding: 2rem 3rem;
     background-color: #001A26;
     color: var(--text-color);
+    z-index: 3;
 }
 
 #header .navbar {
@@ -53,17 +58,25 @@ body {
     font-weight: 600;
 }
 
-#header .navbar div:hover {
+.header_logo a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#header .navbar a:hover {
     color: var(--primary-color);
 }
 
 .active{
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
-#header .navbar div {
+#header .navbar a {
+    display: block;
     padding: 0.4rem;
     margin: 0 1rem;
+    color: var(--text-color);
+    text-decoration: none;
 }
 
 #header .navbar :last-child {
@@ -72,7 +85,31 @@ body {
 
 /* wrap */
 #wrap {
-    background-color: var(--background-color);
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: justify;
+    margin-top: 10rem;
+}
+
+#wrap div {
+    padding-top: 10rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_img {
+    display: block;
+    width: 40rem;
+    height: auto;
+    border-radius: 50%;
 }
 
 /* footer */
@@ -80,5 +117,8 @@ body {
     background-color: #002333;
     color: var(--primary-color);
     font-size: 1.6rem;
-    padding: 2rem 3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
